@@ -1,0 +1,9 @@
+UPDATE transaction
+SET discount = total * 0.15
+WHERE status = "finished" 
+AND promotion_id IN (1,2)
+
+UPDATE transaction
+SET discount = total
+WHERE status = "finished" 
+AND promotion_id IN (3)
